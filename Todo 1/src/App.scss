@@ -1,0 +1,288 @@
+@import "./Scss/base/_colors";
+.TableRowIsUpdated {
+  .ant-table-cell:nth-child(1) {
+    // background-color: red;
+    h1 {
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: #319197;
+      // line-height: 2rem;
+      font-size: 1.5rem;
+      text-underline-offset: 20%;
+    }
+  }
+}
+.disabled-row {
+  background-color: #dcdcdc;
+  pointer-events: none;
+  .ant-table-cell:nth-child(1) {
+    // background-color: red;
+    h1 {
+      text-decoration-line: underline;
+      text-decoration-thickness: 3px;
+      text-decoration-color: #319197;
+      // line-height: 2rem;
+      font-size: 1.5rem;
+      text-underline-offset: 20%;
+    }
+  }
+}
+.container {
+  margin-top: 3%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  h1 {
+    text-align: center;
+  }
+  &__items {
+    display: grid;
+    & > div {
+      margin: 0.8rem;
+    }
+    &__inputs {
+      display: flex;
+      gap: 3%;
+      text-align: center;
+      label {
+        // background-color: red;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.users {
+  margin: 2% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  button {
+    width: 80%;
+    height: 80%;
+  }
+}
+.anticon-spin {
+  font-size: 100px !important;
+  color: #2d80b5;
+  // top: 50%;
+  // left: 50%;
+}
+.ant-spin-spinning {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  color: #2d80b5 !important;
+  z-index: 1000;
+}
+svg {
+  color: #2d80b5;
+}
+.ant-table-content {
+  table {
+    width: 70% !important;
+    margin: 0 auto;
+    // background-color: red;
+  }
+  .ant-table-tbody > tr > td {
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+}
+// .ant-table .table{
+
+// }
+.ant-select-selector,
+.ant-select-selector {
+  display: none !important;
+}
+.ant-table-pagination.ant-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+.add.ant-btn,
+.add.ant-btn:hover,
+.add.ant-btn:active .add.ant-btn:focus,
+.add.ant-btn:hover,
+.add.ant-btn:focus,
+.add.ant-btn:active {
+  background-color: #2d80b5;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 4rem;
+}
+
+.update.ant-btn,
+.update.ant-btn:hover,
+.update.ant-btn:active .update.ant-btn:focus,
+.update.ant-btn:hover,
+.update.ant-btn:focus,
+.update.ant-btn:active {
+  background-color: #52c41a;
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 4rem;
+}
+.ant-pagination {
+  float: unset !important;
+  text-align: center;
+  .ant-pagination-item-active {
+    background: #2d80b5;
+    border-color: #2d80b5;
+    border-radius: 50%;
+  }
+  .ant-pagination-item a {
+    color: var(--black-fourth);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    &:hover {
+      color: #2d80b5;
+    }
+  }
+  .ant-pagination-item-active a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+  .ant-pagination-prev {
+    margin-right: 1rem !important;
+  }
+  .ant-pagination-next {
+    margin-left: 1rem !important;
+  }
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    background: $white !important;
+    border-radius: 50%;
+    box-shadow: 0 0.6px 2px 0.25px;
+  }
+  .ant-pagination-prev:focus .ant-pagination-item-link,
+  .ant-pagination-next:focus .ant-pagination-item-link,
+  .ant-pagination-prev:hover .ant-pagination-item-link,
+  .ant-pagination-next:hover .ant-pagination-item-link {
+    color: var(--black-eight);
+  }
+  .ant-pagination-item:not(.ant-pagination-item-active) {
+    border-radius: 50%;
+  }
+  .anticon {
+    vertical-align: -1px;
+    color: var(--ash-fivth);
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .ant-pagination {
+    float: unset !important;
+    text-align: center;
+    .ant-pagination-item-active {
+      background: $primary;
+      border-color: $primary;
+      border-radius: 50%;
+    }
+    .ant-pagination-item a {
+      color: var(--black-fourth);
+      padding-top: 1px;
+      padding-bottom: 1px;
+      font-family: var(--Book);
+      &:hover {
+        color: $primary;
+      }
+    }
+    .ant-pagination-item-active a {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+    .ant-pagination-prev {
+      margin-right: 1rem !important;
+    }
+    .ant-pagination-next {
+      margin-left: 1rem !important;
+    }
+    .ant-pagination-prev .ant-pagination-item-link,
+    .ant-pagination-next .ant-pagination-item-link {
+      background: $white !important;
+      border-radius: 50%;
+      box-shadow: 0 0.6px 2px 0.25px;
+    }
+    .ant-pagination-prev:focus .ant-pagination-item-link,
+    .ant-pagination-next:focus .ant-pagination-item-link,
+    .ant-pagination-prev:hover .ant-pagination-item-link,
+    .ant-pagination-next:hover .ant-pagination-item-link {
+      color: var(--black-eight);
+    }
+    .ant-pagination-item:not(.ant-pagination-item-active) {
+      border-radius: 50%;
+    }
+    .anticon {
+      vertical-align: -1px;
+      color: var(--ash-fivth);
+    }
+  }
+}
+
+@media only screen and (max-width: 37em) {
+  .ant-pagination {
+    float: unset !important;
+    text-align: center;
+    .ant-pagination-item-active {
+      background: $primary;
+      border-color: $primary;
+      border-radius: 50%;
+    }
+    .ant-pagination-item a {
+      font-size: 1.5rem;
+      color: var(--black-fourth);
+      padding-top: 0px;
+      padding-bottom: 1px;
+      font-family: var(--Book);
+      &:hover {
+        color: $primary;
+      }
+    }
+    .ant-pagination-item {
+      // width: 2.5rem;
+      height: 2.8rem;
+    }
+    .ant-pagination-item-active a {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+    .ant-pagination-prev {
+      margin-right: 1rem !important;
+    }
+    .ant-pagination-next {
+      margin-left: 1rem !important;
+    }
+    .ant-pagination-prev .ant-pagination-item-link,
+    .ant-pagination-next .ant-pagination-item-link {
+      background: $white !important;
+      border-radius: 50%;
+      box-shadow: 0 0.6px 2px 0.25px;
+    }
+    .ant-pagination-prev:focus .ant-pagination-item-link,
+    .ant-pagination-next:focus .ant-pagination-item-link,
+    .ant-pagination-prev:hover .ant-pagination-item-link,
+    .ant-pagination-next:hover .ant-pagination-item-link {
+      color: var(--black-eight);
+    }
+    .ant-pagination-item:not(.ant-pagination-item-active) {
+      border-radius: 50%;
+    }
+    .anticon {
+      vertical-align: -1px;
+      color: var(--ash-fivth);
+    }
+  }
+}
